@@ -1,0 +1,11 @@
+parameters:
+    mailer.transport: sendmail
+
+services:
+    mailer:
+        class:     \beeare\DependencyInjection\Mailer
+        arguments: ["%mailer.transport%"]
+    newsletter_manager:
+        class:     \beeare\DependencyInjection\NewsletterManager
+        calls:
+            - [setMailer, ["@mailer"]]

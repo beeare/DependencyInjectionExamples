@@ -1,0 +1,32 @@
+{
+	"name": "beeare/dependencyinjection",
+	"description": "Dependency Injection and Service Provider examples",
+	"license": "MIT",
+	"keywords": ["dependency injection", "service provider"],
+	"authors": [
+		{
+			"name": "Benjamin Rack",
+			"email": "beeare@gmx.de"
+		}
+	],
+	"require": {
+		"symfony/dependency-injection": "~2.6"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "4.6.*",
+		"mockery/mockery": "0.9.*",
+		"phpspec/prophecy": "~1.0",
+		"phpspec/prophecy-phpunit": "~1.0",
+		"phpspec/phpspec": "~2.0",
+		"phpspec/nyan-formatters": "1.*",
+		"behat/behat": "2.4.*@stable"
+	},
+	"autoload": {
+		"psr-0": {
+			"beeare\\DependencyInjection": "src"
+		},
+        "psr-4": {
+            "beeare\\DependencyInjection\\": "src"
+        }
+    }
+}
